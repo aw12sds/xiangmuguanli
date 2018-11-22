@@ -1,0 +1,2468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1493C6A5-0358-4220-BF91-C05CB4695F71}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>项目管理系统</RootNamespace>
+    <AssemblyName>项目管理系统</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AutoSizeFormClass .cs" />
+    <Compile Include="db_xiangmuguanliDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_xiangmuguanliDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Mujvceshi.cs" />
+    <Compile Include="Mysqlhelp.cs" />
+    <Compile Include="个人管理\Frcaigoushenghe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="个人管理\Frcaigoushenghe.Designer.cs">
+      <DependentUpon>Frcaigoushenghe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="个人管理\Frerpchaxun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="个人管理\Frerpchaxun.Designer.cs">
+      <DependentUpon>Frerpchaxun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="个人管理\Frerpxuanze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="个人管理\Frerpxuanze.Designer.cs">
+      <DependentUpon>Frerpxuanze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="个人管理\Frgerenwuzi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="个人管理\Frgerenwuzi.Designer.cs">
+      <DependentUpon>Frgerenwuzi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="个人管理\Frhetongliaodanshencha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="个人管理\Frhetongliaodanshencha.Designer.cs">
+      <DependentUpon>Frhetongliaodanshencha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="个人管理\Frliulanexcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="个人管理\Frliulanexcel.Designer.cs">
+      <DependentUpon>Frliulanexcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="个人管理\Frshangji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="个人管理\Frshangji.Designer.cs">
+      <DependentUpon>Frshangji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="个人管理\Frshiyongjilu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="个人管理\Frshiyongjilu.Designer.cs">
+      <DependentUpon>Frshiyongjilu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="个人管理\Frwuliaoshenqingdan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="个人管理\Frwuliaoshenqingdan.Designer.cs">
+      <DependentUpon>Frwuliaoshenqingdan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="个人管理\Frwuzilingyong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="个人管理\Frwuzilingyong.Designer.cs">
+      <DependentUpon>Frwuzilingyong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="个人管理\Frerpcreat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="个人管理\Frerpcreat.Designer.cs">
+      <DependentUpon>Frerpcreat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="个人管理\Frgerencaigoushenqing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="个人管理\Frgerencaigoushenqing.Designer.cs">
+      <DependentUpon>Frgerencaigoushenqing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="个人管理\Frgerengoumai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="个人管理\Frgerengoumai.Designer.cs">
+      <DependentUpon>Frgerengoumai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="个人管理\Frxinzengsanji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="个人管理\Frxinzengsanji.Designer.cs">
+      <DependentUpon>Frxinzengsanji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="个人管理\Frxinzengxiangmuqiux.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="个人管理\Frxinzengxiangmuqiux.Designer.cs">
+      <DependentUpon>Frxinzengxiangmuqiux.cs</DependentUpon>
+    </Compile>
+    <Compile Include="个人管理\Frxitongxuqiu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="个人管理\Frxitongxuqiu.Designer.cs">
+      <DependentUpon>Frxitongxuqiu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="个人管理\驳回原因.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="个人管理\驳回原因.Designer.cs">
+      <DependentUpon>驳回原因.cs</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\Frchukutongjiji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\Frchukutongjiji.Designer.cs">
+      <DependentUpon>Frchukutongjiji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\Frwujinjilu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\Frwujinjilu.Designer.cs">
+      <DependentUpon>Frwujinjilu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\Frdaohuoqueren.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\Frdaohuoqueren.Designer.cs">
+      <DependentUpon>Frdaohuoqueren.cs</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\Frdengdai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\Frdengdai.Designer.cs">
+      <DependentUpon>Frdengdai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\Frfapiaopipei.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\Frfapiaopipei.Designer.cs">
+      <DependentUpon>Frfapiaopipei.cs</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\Frmujvbuchuku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\Frmujvbuchuku.Designer.cs">
+      <DependentUpon>Frmujvbuchuku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="市场部\Frchakanliaodan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="市场部\Frchakanliaodan.Designer.cs">
+      <DependentUpon>Frchakanliaodan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="市场部\Frhangshu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="市场部\Frhangshu.Designer.cs">
+      <DependentUpon>Frhangshu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="市场部\Frlingjianliaodan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="市场部\Frlingjianliaodan.Designer.cs">
+      <DependentUpon>Frlingjianliaodan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="市场部\Frmeirixiaoshou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="市场部\Frmeirixiaoshou.Designer.cs">
+      <DependentUpon>Frmeirixiaoshou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="市场部\Frdailixiang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="市场部\Frdailixiang.Designer.cs">
+      <DependentUpon>Frdailixiang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="市场部\Frjixiuxiangmu123.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="市场部\Frjixiuxiangmu123.Designer.cs">
+      <DependentUpon>Frjixiuxiangmu123.cs</DependentUpon>
+    </Compile>
+    <Compile Include="市场部\Frmingxi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="市场部\Frmingxi.Designer.cs">
+      <DependentUpon>Frmingxi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="市场部\Frshangchuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="市场部\Frshangchuan.Designer.cs">
+      <DependentUpon>Frshangchuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="市场部\FrXiangmuguanli1.cs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="市场部\FrXiangmuguanli1.cs.Designer.cs">
+      <DependentUpon>FrXiangmuguanli1.cs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="市场部\FrXiangmuguanli2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="市场部\FrXiangmuguanli2.Designer.cs">
+      <DependentUpon>FrXiangmuguanli2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="市场部\Frxiaoshoubaogao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="市场部\Frxiaoshoubaogao.Designer.cs">
+      <DependentUpon>Frxiaoshoubaogao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="市场部\机修项目审批.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="市场部\机修项目审批.Designer.cs">
+      <DependentUpon>机修项目审批.cs</DependentUpon>
+    </Compile>
+    <Compile Include="总经办\Frshangjixiangmushencha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="总经办\Frshangjixiangmushencha.Designer.cs">
+      <DependentUpon>Frshangjixiangmushencha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="总经办\Frxiugaijiage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="总经办\Frxiugaijiage.Designer.cs">
+      <DependentUpon>Frxiugaijiage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="总经办\Frgudingzichandaohuo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="总经办\Frgudingzichandaohuo.Designer.cs">
+      <DependentUpon>Frgudingzichandaohuo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="总经办\Frzongjingbanshenpi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="总经办\Frzongjingbanshenpi.Designer.cs">
+      <DependentUpon>Frzongjingbanshenpi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="技术部\Franquankucunjishu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="技术部\Franquankucunjishu.Designer.cs">
+      <DependentUpon>Franquankucunjishu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="技术部\Frchuli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="技术部\Frchuli.Designer.cs">
+      <DependentUpon>Frchuli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="技术部\Frjishubuhetongliaodan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="技术部\Frjishubuhetongliaodan.Designer.cs">
+      <DependentUpon>Frjishubuhetongliaodan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="技术部\Frshebeihuafen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="技术部\Frshebeihuafen.Designer.cs">
+      <DependentUpon>Frshebeihuafen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="档案室\Frdayindeyulan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="档案室\Frdayindeyulan.Designer.cs">
+      <DependentUpon>Frdayindeyulan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="模具\Frgongyichaxunmuju.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="模具\Frgongyichaxunmuju.Designer.cs">
+      <DependentUpon>Frgongyichaxunmuju.cs</DependentUpon>
+    </Compile>
+    <Compile Include="模具\Frjijiagongribao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="模具\Frjijiagongribao.Designer.cs">
+      <DependentUpon>Frjijiagongribao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="模具\Frtongjibiaomuju.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="模具\Frtongjibiaomuju.Designer.cs">
+      <DependentUpon>Frtongjibiaomuju.cs</DependentUpon>
+    </Compile>
+    <Compile Include="模具\Frxinzengtongjimuju.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="模具\Frxinzengtongjimuju.Designer.cs">
+      <DependentUpon>Frxinzengtongjimuju.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Franquankucuncaigou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Franquankucuncaigou.Designer.cs">
+      <DependentUpon>Franquankucuncaigou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frgudingzichan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frgudingzichan.Designer.cs">
+      <DependentUpon>Frgudingzichan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frgudingzichanjilu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frgudingzichanjilu.Designer.cs">
+      <DependentUpon>Frgudingzichanjilu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frgudingzichanzaifaqi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frgudingzichanzaifaqi.Designer.cs">
+      <DependentUpon>Frgudingzichanzaifaqi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frwujindaohuo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frwujindaohuo.Designer.cs">
+      <DependentUpon>Frwujindaohuo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frwujinzaifaiqijilu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frwujinzaifaiqijilu.Designer.cs">
+      <DependentUpon>Frwujinzaifaiqijilu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frwujinzaifaqi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frwujinzaifaqi.Designer.cs">
+      <DependentUpon>Frwujinzaifaqi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frbuhege.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frbuhege.Designer.cs">
+      <DependentUpon>Frbuhege.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frbumencaigou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frbumencaigou.Designer.cs">
+      <DependentUpon>Frbumencaigou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frchakanjilu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frchakanjilu.Designer.cs">
+      <DependentUpon>Frchakanjilu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frpici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frpici.Designer.cs">
+      <DependentUpon>Frpici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frzaifaqi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frzaifaqi.Designer.cs">
+      <DependentUpon>Frzaifaqi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frzaifaqijilu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frzaifaqijilu.Designer.cs">
+      <DependentUpon>Frzaifaqijilu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frzaiquerenfujian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frzaiquerenfujian.Designer.cs">
+      <DependentUpon>Frzaiquerenfujian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\自制转外协.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\自制转外协.Designer.cs">
+      <DependentUpon>自制转外协.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\Frchakan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\Frchakan.Designer.cs">
+      <DependentUpon>Frchakan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\Frwaixiezhuanhuanjilu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\Frwaixiezhuanhuanjilu.Designer.cs">
+      <DependentUpon>Frwaixiezhuanhuanjilu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\Frzizhizhuanwaixiejilu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\Frzizhizhuanwaixiejilu.Designer.cs">
+      <DependentUpon>Frzizhizhuanwaixiejilu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\自制转外协审批.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\自制转外协审批.Designer.cs">
+      <DependentUpon>自制转外协审批.cs</DependentUpon>
+    </Compile>
+    <Compile Include="财务部\Frcaiwufukuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务部\Frcaiwufukuan.Designer.cs">
+      <DependentUpon>Frcaiwufukuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="财务部\Frcaiwujiedan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务部\Frcaiwujiedan.Designer.cs">
+      <DependentUpon>Frcaiwujiedan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="财务部\Frchukumingxi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务部\Frchukumingxi.Designer.cs">
+      <DependentUpon>Frchukumingxi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="财务部\Frgongyikapain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务部\Frgongyikapain.Designer.cs">
+      <DependentUpon>Frgongyikapain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="财务部\Frwuliaobiao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务部\Frwuliaobiao.Designer.cs">
+      <DependentUpon>Frwuliaobiao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="质监部\Frchakanxinxi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="质监部\Frchakanxinxi.Designer.cs">
+      <DependentUpon>Frchakanxinxi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="总经办\Frjilu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="总经办\Frjilu.Designer.cs">
+      <DependentUpon>Frjilu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frchakandaohuo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frchakandaohuo.Designer.cs">
+      <DependentUpon>Frchakandaohuo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frchaxunxunjiadan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frchaxunxunjiadan.Designer.cs">
+      <DependentUpon>Frchaxunxunjiadan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frdaohuodaopiaotongji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frdaohuodaopiaotongji.Designer.cs">
+      <DependentUpon>Frdaohuodaopiaotongji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frdaohuogouwuche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frdaohuogouwuche.Designer.cs">
+      <DependentUpon>Frdaohuogouwuche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frdaohuoshenpi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frdaohuoshenpi.Designer.cs">
+      <DependentUpon>Frdaohuoshenpi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frfaqi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frfaqi.Designer.cs">
+      <DependentUpon>Frfaqi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frtijiaofujian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frtijiaofujian.Designer.cs">
+      <DependentUpon>Frtijiaofujian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frxinbanmujvbucaigoucs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frxinbanmujvbucaigoucs.Designer.cs">
+      <DependentUpon>Frxinbanmujvbucaigoucs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\料单总表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\料单总表.Designer.cs">
+      <DependentUpon>料单总表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\驳回原因状态转换.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\驳回原因状态转换.Designer.cs">
+      <DependentUpon>驳回原因状态转换.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\Frbaojia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\Frbaojia.Designer.cs">
+      <DependentUpon>Frbaojia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\Frbuhegepingshen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\Frbuhegepingshen.Designer.cs">
+      <DependentUpon>Frbuhegepingshen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\Frgongyichaxun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\Frgongyichaxun.Designer.cs">
+      <DependentUpon>Frgongyichaxun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\Frjijiagongtongji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\Frjijiagongtongji.Designer.cs">
+      <DependentUpon>Frjijiagongtongji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\Frshengchanzhuanwaixie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\Frshengchanzhuanwaixie.Designer.cs">
+      <DependentUpon>Frshengchanzhuanwaixie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\Frtongjibiao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\Frtongjibiao.Designer.cs">
+      <DependentUpon>Frtongjibiao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\Frxinzengtongji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\Frxinzengtongji.Designer.cs">
+      <DependentUpon>Frxinzengtongji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="财务部\Frxiangmuruku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务部\Frxiangmuruku.Designer.cs">
+      <DependentUpon>Frxiangmuruku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="质监部\Frdaohuozhijian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="质监部\Frdaohuozhijian.Designer.cs">
+      <DependentUpon>Frdaohuozhijian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="质监部\Frfujian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="质监部\Frfujian.Designer.cs">
+      <DependentUpon>Frfujian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="质监部\Frtuihui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="质监部\Frtuihui.Designer.cs">
+      <DependentUpon>Frtuihui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\Frbeiliao1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\Frbeiliao1.Designer.cs">
+      <DependentUpon>Frbeiliao1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\Frcaigou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\Frcaigou.Designer.cs">
+      <DependentUpon>Frcaigou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\Frcaigougenzongliaodan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\Frcaigougenzongliaodan.Designer.cs">
+      <DependentUpon>Frcaigougenzongliaodan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\Frcaigouweiwancheng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\Frcaigouweiwancheng.Designer.cs">
+      <DependentUpon>Frcaigouweiwancheng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\Frdashujv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\Frdashujv.Designer.cs">
+      <DependentUpon>Frdashujv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\Frkongjian1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="项目总览\Frkongjian1.Designer.cs">
+      <DependentUpon>Frkongjian1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\Frkongjian2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="项目总览\Frkongjian2.Designer.cs">
+      <DependentUpon>Frkongjian2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\Frliaodangenzong1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\Frliaodangenzong1.Designer.cs">
+      <DependentUpon>Frliaodangenzong1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\Frsheji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\Frsheji.Designer.cs">
+      <DependentUpon>Frsheji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\Frwujifucai1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\Frwujifucai1.Designer.cs">
+      <DependentUpon>Frwujifucai1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\Frxiangmuzonglan1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\Frxiangmuzonglan1.Designer.cs">
+      <DependentUpon>Frxiangmuzonglan1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\Frjiagongweiwancheng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\Frjiagongweiwancheng.Designer.cs">
+      <DependentUpon>Frjiagongweiwancheng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\Frshejiweiwancheng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\Frshejiweiwancheng.Designer.cs">
+      <DependentUpon>Frshejiweiwancheng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frxiangmuguanli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frxiangmuguanli.Designer.cs">
+      <DependentUpon>Frxiangmuguanli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDGV.cs" />
+    <Compile Include="sqlhelp1.cs" />
+    <Compile Include="sqlhelp111.cs" />
+    <Compile Include="个人管理\Frjishubushenhe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="个人管理\Frjishubushenhe.Designer.cs">
+      <DependentUpon>Frjishubushenhe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="个人管理\Frtuzhishenhe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="个人管理\Frtuzhishenhe.Designer.cs">
+      <DependentUpon>Frtuzhishenhe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\FrCangkuquerenliaodan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\FrCangkuquerenliaodan.Designer.cs">
+      <DependentUpon>FrCangkuquerenliaodan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\FrCangkuruku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\FrCangkuruku.Designer.cs">
+      <DependentUpon>FrCangkuruku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\Frchurukuchaxun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\Frchurukuchaxun.Designer.cs">
+      <DependentUpon>Frchurukuchaxun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\FrDuiyingliaodan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\FrDuiyingliaodan.Designer.cs">
+      <DependentUpon>FrDuiyingliaodan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\Frmujvbushoudong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\Frmujvbushoudong.Designer.cs">
+      <DependentUpon>Frmujvbushoudong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\Frsaomachuku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\Frsaomachuku.Designer.cs">
+      <DependentUpon>Frsaomachuku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\Frsaomadengji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\Frsaomadengji.Designer.cs">
+      <DependentUpon>Frsaomadengji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\Frsaomatuiku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\Frsaomatuiku.Designer.cs">
+      <DependentUpon>Frsaomatuiku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\Frshoudngruku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\Frshoudngruku.Designer.cs">
+      <DependentUpon>Frshoudngruku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\Frshoudongchuku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\Frshoudongchuku.Designer.cs">
+      <DependentUpon>Frshoudongchuku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\Frshoudongtuihuo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\Frshoudongtuihuo.Designer.cs">
+      <DependentUpon>Frshoudongtuihuo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\Frshoudongtuiku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\Frshoudongtuiku.Designer.cs">
+      <DependentUpon>Frshoudongtuiku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\Frxiangxiliucheng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\Frxiangxiliucheng.Designer.cs">
+      <DependentUpon>Frxiangxiliucheng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\FrZongliucheng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\FrZongliucheng.Designer.cs">
+      <DependentUpon>FrZongliucheng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="市场部\Frshichangjixiujian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="市场部\Frshichangjixiujian.Designer.cs">
+      <DependentUpon>Frshichangjixiujian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="技术部\FrHoutai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="技术部\FrHoutai.Designer.cs">
+      <DependentUpon>FrHoutai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="技术部\FrJishubujianyan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="技术部\FrJishubujianyan.Designer.cs">
+      <DependentUpon>FrJishubujianyan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="技术部\FrJishubujianyanfankui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="技术部\FrJishubujianyanfankui.Designer.cs">
+      <DependentUpon>FrJishubujianyanfankui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="技术部\Frxiugailiaodan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="技术部\Frxiugailiaodan.Designer.cs">
+      <DependentUpon>Frxiugailiaodan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="技术部\FRliaodanbianji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="技术部\FRliaodanbianji.Designer.cs">
+      <DependentUpon>FRliaodanbianji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="技术部\Frliaodangenggai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="技术部\Frliaodangenggai.Designer.cs">
+      <DependentUpon>Frliaodangenggai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="技术部\frshenheliaodan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="技术部\frshenheliaodan.Designer.cs">
+      <DependentUpon>frshenheliaodan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="技术部\Frchaxunbianma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="技术部\Frchaxunbianma.Designer.cs">
+      <DependentUpon>Frchaxunbianma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="档案室\Frdayin1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="档案室\Frdayin1.Designer.cs">
+      <DependentUpon>Frdayin1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frgonglinghaojine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frgonglinghaojine.Designer.cs">
+      <DependentUpon>Frgonglinghaojine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frjixiuhetongmoban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frjixiuhetongmoban.Designer.cs">
+      <DependentUpon>Frjixiuhetongmoban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frxunjialiaodan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frxunjialiaodan.Designer.cs">
+      <DependentUpon>Frxunjialiaodan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\Frdayinyulan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\Frdayinyulan.Designer.cs">
+      <DependentUpon>Frdayinyulan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\PrintOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\PrintOptions.Designer.cs">
+      <DependentUpon>PrintOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="财务部\Frjishugenggairuku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务部\Frjishugenggairuku.Designer.cs">
+      <DependentUpon>Frjishugenggairuku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="财务部\Frjixiujianruku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务部\Frjixiujianruku.Designer.cs">
+      <DependentUpon>Frjixiujianruku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="质监部\FrJianyan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="质监部\FrJianyan.Designer.cs">
+      <DependentUpon>FrJianyan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLhelp.cs" />
+    <Compile Include="仓库\FrCangku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\FrCangku.Designer.cs">
+      <DependentUpon>FrCangku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="仓库\FrCangkuliaodan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库\FrCangkuliaodan.Designer.cs">
+      <DependentUpon>FrCangkuliaodan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="市场部\FrJiedan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="市场部\FrJiedan.Designer.cs">
+      <DependentUpon>FrJiedan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="市场部\FrXiangmuguanli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="市场部\FrXiangmuguanli.Designer.cs">
+      <DependentUpon>FrXiangmuguanli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="个人管理\FrFankuineirong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="个人管理\FrFankuineirong.Designer.cs">
+      <DependentUpon>FrFankuineirong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="个人管理\FrFankuixiangxi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="个人管理\FrFankuixiangxi.Designer.cs">
+      <DependentUpon>FrFankuixiangxi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="个人管理\FrJinzhantixing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="个人管理\FrJinzhantixing.Designer.cs">
+      <DependentUpon>FrJinzhantixing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="技术部\FrJindutiao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="技术部\FrJindutiao.Designer.cs">
+      <DependentUpon>FrJindutiao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="技术部\FrJishubuhuifu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="技术部\FrJishubuhuifu.Designer.cs">
+      <DependentUpon>FrJishubuhuifu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="技术部\FrJjishubufankuii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="技术部\FrJjishubufankuii.Designer.cs">
+      <DependentUpon>FrJjishubufankuii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="技术部\FrLiaodan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="技术部\FrLiaodan.Designer.cs">
+      <DependentUpon>FrLiaodan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="技术部\FrLiaodanshezhi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="技术部\FrLiaodanshezhi.Designer.cs">
+      <DependentUpon>FrLiaodanshezhi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="技术部\FrTianjiafujian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="技术部\FrTianjiafujian.Designer.cs">
+      <DependentUpon>FrTianjiafujian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="技术部\FrTiaoshifankui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="技术部\FrTiaoshifankui.Designer.cs">
+      <DependentUpon>FrTiaoshifankui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="技术部\FrTiaoshiguanli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="技术部\FrTiaoshiguanli.Designer.cs">
+      <DependentUpon>FrTiaoshiguanli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="技术部\FrTiaoshiqingkuang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="技术部\FrTiaoshiqingkuang.Designer.cs">
+      <DependentUpon>FrTiaoshiqingkuang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="技术部\FrXiangmufenjie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="技术部\FrXiangmufenjie.Designer.cs">
+      <DependentUpon>FrXiangmufenjie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="质监部\Frshaixuanliaodan1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="质监部\Frshaixuanliaodan1.Designer.cs">
+      <DependentUpon>Frshaixuanliaodan1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="质监部\Frtuzhichaxun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="质监部\Frtuzhichaxun.Designer.cs">
+      <DependentUpon>Frtuzhichaxun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="质监部\FrZhijianbuhuifu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="质监部\FrZhijianbuhuifu.Designer.cs">
+      <DependentUpon>FrZhijianbuhuifu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="质监部\Frzhijianbuliaodan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="质监部\Frzhijianbuliaodan.Designer.cs">
+      <DependentUpon>Frzhijianbuliaodan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="质监部\Frdaohuoyanshou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="质监部\Frdaohuoyanshou.Designer.cs">
+      <DependentUpon>Frdaohuoyanshou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frdingdan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frdingdan.Designer.cs">
+      <DependentUpon>Frdingdan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frfenjie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frfenjie.Designer.cs">
+      <DependentUpon>Frfenjie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frfukuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frfukuan.Designer.cs">
+      <DependentUpon>Frfukuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frgognxuwaixieshenqing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frgognxuwaixieshenqing.Designer.cs">
+      <DependentUpon>Frgognxuwaixieshenqing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frgongyingshangguanli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frgongyingshangguanli.Designer.cs">
+      <DependentUpon>Frgongyingshangguanli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frhetongliaodan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frhetongliaodan.Designer.cs">
+      <DependentUpon>Frhetongliaodan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frhetongmoban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frhetongmoban.Designer.cs">
+      <DependentUpon>Frhetongmoban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frjisuanjine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frjisuanjine.Designer.cs">
+      <DependentUpon>Frjisuanjine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frjixiebiaozhun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frjixiebiaozhun.Designer.cs">
+      <DependentUpon>Frjixiebiaozhun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frjixiebiaozhunliaodan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frjixiebiaozhunliaodan.Designer.cs">
+      <DependentUpon>Frjixiebiaozhunliaodan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frjixiuxiangmu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frjixiuxiangmu.Designer.cs">
+      <DependentUpon>Frjixiuxiangmu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frliuchenghuifu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frliuchenghuifu.Designer.cs">
+      <DependentUpon>Frliuchenghuifu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frmujvbucaigou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frmujvbucaigou.Designer.cs">
+      <DependentUpon>Frmujvbucaigou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frshaixuanliaodan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frshaixuanliaodan.Designer.cs">
+      <DependentUpon>Frshaixuanliaodan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frwuliuwujinfucai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frwuliuwujinfucai.Designer.cs">
+      <DependentUpon>Frwuliuwujinfucai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\FrWuliubuliaodan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\FrWuliubuliaodan.Designer.cs">
+      <DependentUpon>FrWuliubuliaodan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\FrWuliubuxiangxiliaodan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\FrWuliubuxiangxiliaodan.Designer.cs">
+      <DependentUpon>FrWuliubuxiangxiliaodan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\FrWuliuguanli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\FrWuliuguanli.Designer.cs">
+      <DependentUpon>FrWuliuguanli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\FrWuliurenwu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\FrWuliurenwu.Designer.cs">
+      <DependentUpon>FrWuliurenwu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frwuliuzonglan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frwuliuzonglan.Designer.cs">
+      <DependentUpon>Frwuliuzonglan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frxinjiangongyingshang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frxinjiangongyingshang.Designer.cs">
+      <DependentUpon>Frxinjiangongyingshang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frxunjia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frxunjia.Designer.cs">
+      <DependentUpon>Frxunjia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frzhdingzhuangtai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frzhdingzhuangtai.Designer.cs">
+      <DependentUpon>Frzhdingzhuangtai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frzhidingdaohuoriqi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frzhidingdaohuoriqi.Designer.cs">
+      <DependentUpon>Frzhidingdaohuoriqi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frzhidinggongfang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frzhidinggongfang.Designer.cs">
+      <DependentUpon>Frzhidinggongfang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frzhidinghetonghao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frzhidinghetonghao.Designer.cs">
+      <DependentUpon>Frzhidinghetonghao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物流部\Frzonglanxiangqing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物流部\Frzonglanxiangqing.Designer.cs">
+      <DependentUpon>Frzonglanxiangqing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\Frbeiliao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\Frbeiliao.Designer.cs">
+      <DependentUpon>Frbeiliao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\Frbeiliaoxiangmu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\Frbeiliaoxiangmu.Designer.cs">
+      <DependentUpon>Frbeiliaoxiangmu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\Frbeiliaoxiangxi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\Frbeiliaoxiangxi.Designer.cs">
+      <DependentUpon>Frbeiliaoxiangxi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\FrFahuoqueren.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\FrFahuoqueren.Designer.cs">
+      <DependentUpon>FrFahuoqueren.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\FrFahuoquerenfankui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\FrFahuoquerenfankui.Designer.cs">
+      <DependentUpon>FrFahuoquerenfankui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\FrFahuoquerenliaodan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\FrFahuoquerenliaodan.Designer.cs">
+      <DependentUpon>FrFahuoquerenliaodan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\FrFahuoquerenzongliucheng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\FrFahuoquerenzongliucheng.Designer.cs">
+      <DependentUpon>FrFahuoquerenzongliucheng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\Frgongxuwaixie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\Frgongxuwaixie.Designer.cs">
+      <DependentUpon>Frgongxuwaixie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\Frgongxuxuanze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\Frgongxuxuanze.Designer.cs">
+      <DependentUpon>Frgongxuxuanze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\FrJiagongguanli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\FrJiagongguanli.Designer.cs">
+      <DependentUpon>FrJiagongguanli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\FrJiagongliaodan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\FrJiagongliaodan.Designer.cs">
+      <DependentUpon>FrJiagongliaodan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\Frjishugenggai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\Frjishugenggai.Designer.cs">
+      <DependentUpon>Frjishugenggai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\Frjixiujianxinjian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\Frjixiujianxinjian.Designer.cs">
+      <DependentUpon>Frjixiujianxinjian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\FrJixiuyewu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\FrJixiuyewu.Designer.cs">
+      <DependentUpon>FrJixiuyewu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\Frmohusousuo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\Frmohusousuo.Designer.cs">
+      <DependentUpon>Frmohusousuo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\Frpaichanjihua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\Frpaichanjihua.Designer.cs">
+      <DependentUpon>Frpaichanjihua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\FrShengchanbujianyan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\FrShengchanbujianyan.Designer.cs">
+      <DependentUpon>FrShengchanbujianyan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\FrShengchanbuliaodan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\FrShengchanbuliaodan.Designer.cs">
+      <DependentUpon>FrShengchanbuliaodan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\FrShengchanbuzongliaodan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\FrShengchanbuzongliaodan.Designer.cs">
+      <DependentUpon>FrShengchanbuzongliaodan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\FrShengchanguanli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\FrShengchanguanli.Designer.cs">
+      <DependentUpon>FrShengchanguanli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\FrShengchanjianyanfankui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\FrShengchanjianyanfankui.Designer.cs">
+      <DependentUpon>FrShengchanjianyanfankui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\Frshengqingdan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\Frshengqingdan.Designer.cs">
+      <DependentUpon>Frshengqingdan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\Frwujinfucai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\Frwujinfucai.Designer.cs">
+      <DependentUpon>Frwujinfucai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\FrZhuangpeifankui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\FrZhuangpeifankui.Designer.cs">
+      <DependentUpon>FrZhuangpeifankui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\FrZhuangpeiguanli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\FrZhuangpeiguanli.Designer.cs">
+      <DependentUpon>FrZhuangpeiguanli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="生产部\FrZhuangpeiqingkuang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="生产部\FrZhuangpeiqingkuang.Designer.cs">
+      <DependentUpon>FrZhuangpeiqingkuang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="财务部\Frgongyika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务部\Frgongyika.Designer.cs">
+      <DependentUpon>Frgongyika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="财务部\Frmujvbu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务部\Frmujvbu.Designer.cs">
+      <DependentUpon>Frmujvbu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="财务部\Frrukuchaxun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务部\Frrukuchaxun.Designer.cs">
+      <DependentUpon>Frrukuchaxun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运营管理\FrBumenbianji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运营管理\FrBumenbianji.Designer.cs">
+      <DependentUpon>FrBumenbianji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运营管理\FrBumenguanli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运营管理\FrBumenguanli.Designer.cs">
+      <DependentUpon>FrBumenguanli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运营管理\FrYonghubianji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运营管理\FrYonghubianji.Designer.cs">
+      <DependentUpon>FrYonghubianji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运营管理\FrYonghuguanli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运营管理\FrYonghuguanli.Designer.cs">
+      <DependentUpon>FrYonghuguanli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运营管理\FrZhiweibianji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运营管理\FrZhiweibianji.Designer.cs">
+      <DependentUpon>FrZhiweibianji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="运营管理\FrZhiweiguanli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="运营管理\FrZhiweiguanli.Designer.cs">
+      <DependentUpon>FrZhiweiguanli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\FrCaigouxiangqing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\FrCaigouxiangqing.Designer.cs">
+      <DependentUpon>FrCaigouxiangqing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\FrFankuixiangxi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\FrFankuixiangxi.Designer.cs">
+      <DependentUpon>FrFankuixiangxi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\Frgongyishunxuliaodan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\Frgongyishunxuliaodan.Designer.cs">
+      <DependentUpon>Frgongyishunxuliaodan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\FrJiagongxiangqing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\FrJiagongxiangqing.Designer.cs">
+      <DependentUpon>FrJiagongxiangqing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\Frjinggongxiangmu1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\Frjinggongxiangmu1.Designer.cs">
+      <DependentUpon>Frjinggongxiangmu1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\FrJinggongxiangmu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\FrJinggongxiangmu.Designer.cs">
+      <DependentUpon>FrJinggongxiangmu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\FrMujvbuxiangmu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\FrMujvbuxiangmu.Designer.cs">
+      <DependentUpon>FrMujvbuxiangmu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\FrTiaoshihuifu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\FrTiaoshihuifu.Designer.cs">
+      <DependentUpon>FrTiaoshihuifu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\FrTiaoshixiangqing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\FrTiaoshixiangqing.Designer.cs">
+      <DependentUpon>FrTiaoshixiangqing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\Frwujinfucaixiangmu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\Frwujinfucaixiangmu.Designer.cs">
+      <DependentUpon>Frwujinfucaixiangmu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\FrXiangxi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\FrXiangxi.Designer.cs">
+      <DependentUpon>FrXiangxi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\FrYanfaxiangqing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\FrYanfaxiangqing.Designer.cs">
+      <DependentUpon>FrYanfaxiangqing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\Frzhangpei.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\Frzhangpei.Designer.cs">
+      <DependentUpon>Frzhangpei.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\FrZhishixianghuifu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\FrZhishixianghuifu.Designer.cs">
+      <DependentUpon>FrZhishixianghuifu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\Frzhuangpei.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\Frzhuangpei.Designer.cs">
+      <DependentUpon>Frzhuangpei.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\FrZhuangpeihuifu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\FrZhuangpeihuifu.Designer.cs">
+      <DependentUpon>FrZhuangpeihuifu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\FrZhuangpeixiangqing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\FrZhuangpeixiangqing.Designer.cs">
+      <DependentUpon>FrZhuangpeixiangqing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\FrZonglan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\FrZonglan.Designer.cs">
+      <DependentUpon>FrZonglan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\Frzonglanzongliaodan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\Frzonglanzongliaodan.Designer.cs">
+      <DependentUpon>Frzonglanzongliaodan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\FrZongliucheng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\FrZongliucheng.Designer.cs">
+      <DependentUpon>FrZongliucheng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\Frweiwanchengcaigouliaodan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\Frweiwanchengcaigouliaodan.Designer.cs">
+      <DependentUpon>Frweiwanchengcaigouliaodan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\Frweiwanchengjiagongliaodan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\Frweiwanchengjiagongliaodan.Designer.cs">
+      <DependentUpon>Frweiwanchengjiagongliaodan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="项目总览\Frzhuangpeiweiwancheng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目总览\Frzhuangpeiweiwancheng.Designer.cs">
+      <DependentUpon>Frzhuangpeiweiwancheng.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="个人管理\Frcaigoushenghe.resx">
+      <DependentUpon>Frcaigoushenghe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="个人管理\Frerpchaxun.resx">
+      <DependentUpon>Frerpchaxun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="个人管理\Frerpxuanze.resx">
+      <DependentUpon>Frerpxuanze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="个人管理\Frgerenwuzi.resx">
+      <DependentUpon>Frgerenwuzi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="个人管理\Frhetongliaodanshencha.resx">
+      <DependentUpon>Frhetongliaodanshencha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="个人管理\Frliulanexcel.resx">
+      <DependentUpon>Frliulanexcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="个人管理\Frshangji.resx">
+      <DependentUpon>Frshangji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="个人管理\Frshiyongjilu.resx">
+      <DependentUpon>Frshiyongjilu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="个人管理\Frwuliaoshenqingdan.resx">
+      <DependentUpon>Frwuliaoshenqingdan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="个人管理\Frwuzilingyong.resx">
+      <DependentUpon>Frwuzilingyong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="个人管理\Frerpcreat.resx">
+      <DependentUpon>Frerpcreat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="个人管理\Frgerencaigoushenqing.resx">
+      <DependentUpon>Frgerencaigoushenqing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="个人管理\Frgerengoumai.resx">
+      <DependentUpon>Frgerengoumai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="个人管理\Frxinzengsanji.resx">
+      <DependentUpon>Frxinzengsanji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="个人管理\Frxinzengxiangmuqiux.resx">
+      <DependentUpon>Frxinzengxiangmuqiux.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="个人管理\Frxitongxuqiu.resx">
+      <DependentUpon>Frxitongxuqiu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="个人管理\驳回原因.resx">
+      <DependentUpon>驳回原因.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\Frchukutongjiji.resx">
+      <DependentUpon>Frchukutongjiji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\Frdaohuoqueren.resx">
+      <DependentUpon>Frdaohuoqueren.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\Frdengdai.resx">
+      <DependentUpon>Frdengdai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\Frfapiaopipei.resx">
+      <DependentUpon>Frfapiaopipei.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\Frmujvbuchuku.resx">
+      <DependentUpon>Frmujvbuchuku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="市场部\Frchakanliaodan.resx">
+      <DependentUpon>Frchakanliaodan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="市场部\Frhangshu.resx">
+      <DependentUpon>Frhangshu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="市场部\Frlingjianliaodan.resx">
+      <DependentUpon>Frlingjianliaodan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="市场部\Frmeirixiaoshou.resx">
+      <DependentUpon>Frmeirixiaoshou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="市场部\Frdailixiang.resx">
+      <DependentUpon>Frdailixiang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="市场部\Frjixiuxiangmu123.resx">
+      <DependentUpon>Frjixiuxiangmu123.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="市场部\Frmingxi.resx">
+      <DependentUpon>Frmingxi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="市场部\Frshangchuan.resx">
+      <DependentUpon>Frshangchuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="市场部\FrXiangmuguanli1.cs.resx">
+      <DependentUpon>FrXiangmuguanli1.cs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="市场部\FrXiangmuguanli2.resx">
+      <DependentUpon>FrXiangmuguanli2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="市场部\Frxiaoshoubaogao.resx">
+      <DependentUpon>Frxiaoshoubaogao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="市场部\机修项目审批.resx">
+      <DependentUpon>机修项目审批.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="总经办\Frgudingzichandaohuo.resx">
+      <DependentUpon>Frgudingzichandaohuo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="总经办\Frjilu.resx">
+      <DependentUpon>Frjilu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="总经办\Frshangjixiangmushencha.resx">
+      <DependentUpon>Frshangjixiangmushencha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="总经办\Frxiugaijiage.resx">
+      <DependentUpon>Frxiugaijiage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="总经办\Frzongjingbanshenpi.resx">
+      <DependentUpon>Frzongjingbanshenpi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="技术部\Franquankucunjishu.resx">
+      <DependentUpon>Franquankucunjishu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="技术部\Frchuli.resx">
+      <DependentUpon>Frchuli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="技术部\Frjishubuhetongliaodan.resx">
+      <DependentUpon>Frjishubuhetongliaodan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="技术部\Frshebeihuafen.resx">
+      <DependentUpon>Frshebeihuafen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="档案室\Frdayindeyulan.resx">
+      <DependentUpon>Frdayindeyulan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="模具\Frgongyichaxunmuju.resx">
+      <DependentUpon>Frgongyichaxunmuju.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="模具\Frjijiagongribao.resx">
+      <DependentUpon>Frjijiagongribao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="模具\Frtongjibiaomuju.resx">
+      <DependentUpon>Frtongjibiaomuju.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="模具\Frxinzengtongjimuju.resx">
+      <DependentUpon>Frxinzengtongjimuju.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Franquankucuncaigou.resx">
+      <DependentUpon>Franquankucuncaigou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frbuhege.resx">
+      <DependentUpon>Frbuhege.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frbumencaigou.resx">
+      <DependentUpon>Frbumencaigou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frchakandaohuo.resx">
+      <DependentUpon>Frchakandaohuo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frchakanjilu.resx">
+      <DependentUpon>Frchakanjilu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frchaxunxunjiadan.resx">
+      <DependentUpon>Frchaxunxunjiadan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frdaohuodaopiaotongji.resx">
+      <DependentUpon>Frdaohuodaopiaotongji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frdaohuogouwuche.resx">
+      <DependentUpon>Frdaohuogouwuche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frdaohuoshenpi.resx">
+      <DependentUpon>Frdaohuoshenpi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frfaqi.resx">
+      <DependentUpon>Frfaqi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frgudingzichanzaifaqi.resx">
+      <DependentUpon>Frgudingzichanzaifaqi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frpici.resx">
+      <DependentUpon>Frpici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frtijiaofujian.resx">
+      <DependentUpon>Frtijiaofujian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frwujinzaifaqi.resx">
+      <DependentUpon>Frwujinzaifaqi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frxinbanmujvbucaigoucs.resx">
+      <DependentUpon>Frxinbanmujvbucaigoucs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frzaifaqi.resx">
+      <DependentUpon>Frzaifaqi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frzaifaqijilu.resx">
+      <DependentUpon>Frzaifaqijilu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frzaiquerenfujian.resx">
+      <DependentUpon>Frzaiquerenfujian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\料单总表.resx">
+      <DependentUpon>料单总表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\自制转外协.resx">
+      <DependentUpon>自制转外协.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\驳回原因状态转换.resx">
+      <DependentUpon>驳回原因状态转换.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\Frbaojia.resx">
+      <DependentUpon>Frbaojia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\Frbuhegepingshen.resx">
+      <DependentUpon>Frbuhegepingshen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\Frchakan.resx">
+      <DependentUpon>Frchakan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\Frgongyichaxun.resx">
+      <DependentUpon>Frgongyichaxun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\Frjijiagongtongji.resx">
+      <DependentUpon>Frjijiagongtongji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\Frshengchanzhuanwaixie.resx">
+      <DependentUpon>Frshengchanzhuanwaixie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\Frtongjibiao.resx">
+      <DependentUpon>Frtongjibiao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\Frwaixiezhuanhuanjilu.resx">
+      <DependentUpon>Frwaixiezhuanhuanjilu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\Frxinzengtongji.resx">
+      <DependentUpon>Frxinzengtongji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\Frzizhizhuanwaixiejilu.resx">
+      <DependentUpon>Frzizhizhuanwaixiejilu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\自制转外协审批.resx">
+      <DependentUpon>自制转外协审批.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务部\Frcaiwufukuan.resx">
+      <DependentUpon>Frcaiwufukuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务部\Frchukumingxi.resx">
+      <DependentUpon>Frchukumingxi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务部\Frgongyikapain.resx">
+      <DependentUpon>Frgongyikapain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务部\Frwuliaobiao.resx">
+      <DependentUpon>Frwuliaobiao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务部\Frxiangmuruku.resx">
+      <DependentUpon>Frxiangmuruku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="质监部\Frchakanxinxi.resx">
+      <DependentUpon>Frchakanxinxi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="质监部\Frdaohuoyanshou.resx">
+      <DependentUpon>Frdaohuoyanshou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="质监部\Frdaohuozhijian.resx">
+      <DependentUpon>Frdaohuozhijian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="质监部\Frfujian.resx">
+      <DependentUpon>Frfujian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="质监部\Frtuihui.resx">
+      <DependentUpon>Frtuihui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\Frbeiliao1.resx">
+      <DependentUpon>Frbeiliao1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\Frcaigou.resx">
+      <DependentUpon>Frcaigou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\Frcaigougenzongliaodan.resx">
+      <DependentUpon>Frcaigougenzongliaodan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\Frcaigouweiwancheng.resx">
+      <DependentUpon>Frcaigouweiwancheng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\Frdashujv.resx">
+      <DependentUpon>Frdashujv.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\Frkongjian1.resx">
+      <DependentUpon>Frkongjian1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\Frkongjian2.resx">
+      <DependentUpon>Frkongjian2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\Frliaodangenzong1.resx">
+      <DependentUpon>Frliaodangenzong1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\Frsheji.resx">
+      <DependentUpon>Frsheji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\Frwujifucai1.resx">
+      <DependentUpon>Frwujifucai1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\Frxiangmuzonglan1.resx">
+      <DependentUpon>Frxiangmuzonglan1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frxiangmuguanli.resx">
+      <DependentUpon>Frxiangmuguanli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="个人管理\Frjishubushenhe.resx">
+      <DependentUpon>Frjishubushenhe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="个人管理\Frtuzhishenhe.resx">
+      <DependentUpon>Frtuzhishenhe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\FrCangkuquerenliaodan.resx">
+      <DependentUpon>FrCangkuquerenliaodan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\FrCangkuruku.resx">
+      <DependentUpon>FrCangkuruku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\Frchurukuchaxun.resx">
+      <DependentUpon>Frchurukuchaxun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\FrDuiyingliaodan.resx">
+      <DependentUpon>FrDuiyingliaodan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\Frmujvbushoudong.resx">
+      <DependentUpon>Frmujvbushoudong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\Frsaomachuku.resx">
+      <DependentUpon>Frsaomachuku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\Frsaomadengji.resx">
+      <DependentUpon>Frsaomadengji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\Frsaomatuiku.resx">
+      <DependentUpon>Frsaomatuiku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\Frshoudngruku.resx">
+      <DependentUpon>Frshoudngruku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\Frshoudongchuku.resx">
+      <DependentUpon>Frshoudongchuku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\Frshoudongtuihuo.resx">
+      <DependentUpon>Frshoudongtuihuo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\Frshoudongtuiku.resx">
+      <DependentUpon>Frshoudongtuiku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\Frxiangxiliucheng.resx">
+      <DependentUpon>Frxiangxiliucheng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\FrZongliucheng.resx">
+      <DependentUpon>FrZongliucheng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="市场部\Frshichangjixiujian.resx">
+      <DependentUpon>Frshichangjixiujian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="技术部\FrHoutai.resx">
+      <DependentUpon>FrHoutai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="技术部\FrJishubujianyan.resx">
+      <DependentUpon>FrJishubujianyan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="技术部\FrJishubujianyanfankui.resx">
+      <DependentUpon>FrJishubujianyanfankui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="技术部\FRliaodanbianji.resx">
+      <DependentUpon>FRliaodanbianji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="技术部\Frliaodangenggai.resx">
+      <DependentUpon>Frliaodangenggai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="技术部\frshenheliaodan.resx">
+      <DependentUpon>frshenheliaodan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="档案室\Frdayin1.resx">
+      <DependentUpon>Frdayin1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frgonglinghaojine.resx">
+      <DependentUpon>Frgonglinghaojine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frjixiuhetongmoban.resx">
+      <DependentUpon>Frjixiuhetongmoban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frxunjialiaodan.resx">
+      <DependentUpon>Frxunjialiaodan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\Frdayinyulan.resx">
+      <DependentUpon>Frdayinyulan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\PrintOptions.resx">
+      <DependentUpon>PrintOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务部\Frjishugenggairuku.resx">
+      <DependentUpon>Frjishugenggairuku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务部\Frjixiujianruku.resx">
+      <DependentUpon>Frjixiujianruku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="质监部\FrJianyan.resx">
+      <DependentUpon>FrJianyan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="仓库\FrCangku.resx">
+      <DependentUpon>FrCangku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库\FrCangkuliaodan.resx">
+      <DependentUpon>FrCangkuliaodan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="市场部\FrJiedan.resx">
+      <DependentUpon>FrJiedan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="市场部\FrXiangmuguanli.resx">
+      <DependentUpon>FrXiangmuguanli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="个人管理\FrFankuineirong.resx">
+      <DependentUpon>FrFankuineirong.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="个人管理\FrFankuixiangxi.resx">
+      <DependentUpon>FrFankuixiangxi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="个人管理\FrJinzhantixing.resx">
+      <DependentUpon>FrJinzhantixing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="技术部\FrJindutiao.resx">
+      <DependentUpon>FrJindutiao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="技术部\FrJishubuhuifu.resx">
+      <DependentUpon>FrJishubuhuifu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="技术部\FrJjishubufankuii.resx">
+      <DependentUpon>FrJjishubufankuii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="技术部\FrLiaodan.resx">
+      <DependentUpon>FrLiaodan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="技术部\FrLiaodanshezhi.resx">
+      <DependentUpon>FrLiaodanshezhi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="技术部\FrTianjiafujian.resx">
+      <DependentUpon>FrTianjiafujian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="技术部\FrTiaoshifankui.resx">
+      <DependentUpon>FrTiaoshifankui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="技术部\FrTiaoshiguanli.resx">
+      <DependentUpon>FrTiaoshiguanli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="技术部\Frchaxunbianma.resx">
+      <DependentUpon>Frchaxunbianma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="技术部\Frxiugailiaodan.resx">
+      <DependentUpon>Frxiugailiaodan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="技术部\FrTiaoshiqingkuang.resx">
+      <DependentUpon>FrTiaoshiqingkuang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="技术部\FrXiangmufenjie.resx">
+      <DependentUpon>FrXiangmufenjie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="质监部\Frshaixuanliaodan1.resx">
+      <DependentUpon>Frshaixuanliaodan1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="质监部\Frtuzhichaxun.resx">
+      <DependentUpon>Frtuzhichaxun.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="质监部\FrZhijianbuhuifu.resx">
+      <DependentUpon>FrZhijianbuhuifu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="质监部\Frzhijianbuliaodan.resx">
+      <DependentUpon>Frzhijianbuliaodan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frdingdan.resx">
+      <DependentUpon>Frdingdan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frfenjie.resx">
+      <DependentUpon>Frfenjie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frfukuan.resx">
+      <DependentUpon>Frfukuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frgognxuwaixieshenqing.resx">
+      <DependentUpon>Frgognxuwaixieshenqing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frgongyingshangguanli.resx">
+      <DependentUpon>Frgongyingshangguanli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frhetongliaodan.resx">
+      <DependentUpon>Frhetongliaodan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frhetongmoban.resx">
+      <DependentUpon>Frhetongmoban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frjisuanjine.resx">
+      <DependentUpon>Frjisuanjine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frjixiebiaozhun.resx">
+      <DependentUpon>Frjixiebiaozhun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frjixiebiaozhunliaodan.resx">
+      <DependentUpon>Frjixiebiaozhunliaodan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frjixiuxiangmu.resx">
+      <DependentUpon>Frjixiuxiangmu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frliuchenghuifu.resx">
+      <DependentUpon>Frliuchenghuifu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frmujvbucaigou.resx">
+      <DependentUpon>Frmujvbucaigou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frshaixuanliaodan.resx">
+      <DependentUpon>Frshaixuanliaodan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frwuliuwujinfucai.resx">
+      <DependentUpon>Frwuliuwujinfucai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\FrWuliubuliaodan.resx">
+      <DependentUpon>FrWuliubuliaodan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\FrWuliubuxiangxiliaodan.resx">
+      <DependentUpon>FrWuliubuxiangxiliaodan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\FrWuliuguanli.resx">
+      <DependentUpon>FrWuliuguanli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\FrWuliurenwu.resx">
+      <DependentUpon>FrWuliurenwu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frwuliuzonglan.resx">
+      <DependentUpon>Frwuliuzonglan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frxinjiangongyingshang.resx">
+      <DependentUpon>Frxinjiangongyingshang.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frxunjia.resx">
+      <DependentUpon>Frxunjia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frzhdingzhuangtai.resx">
+      <DependentUpon>Frzhdingzhuangtai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frzhidingdaohuoriqi.resx">
+      <DependentUpon>Frzhidingdaohuoriqi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frzhidinggongfang.resx">
+      <DependentUpon>Frzhidinggongfang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frzhidinghetonghao.resx">
+      <DependentUpon>Frzhidinghetonghao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物流部\Frzonglanxiangqing.resx">
+      <DependentUpon>Frzonglanxiangqing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\Frbeiliao.resx">
+      <DependentUpon>Frbeiliao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\Frbeiliaoxiangmu.resx">
+      <DependentUpon>Frbeiliaoxiangmu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\Frbeiliaoxiangxi.resx">
+      <DependentUpon>Frbeiliaoxiangxi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\FrFahuoqueren.resx">
+      <DependentUpon>FrFahuoqueren.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\FrFahuoquerenfankui.resx">
+      <DependentUpon>FrFahuoquerenfankui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\FrFahuoquerenliaodan.resx">
+      <DependentUpon>FrFahuoquerenliaodan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\FrFahuoquerenzongliucheng.resx">
+      <DependentUpon>FrFahuoquerenzongliucheng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\Frgongxuwaixie.resx">
+      <DependentUpon>Frgongxuwaixie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\Frgongxuxuanze.resx">
+      <DependentUpon>Frgongxuxuanze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\FrJiagongguanli.resx">
+      <DependentUpon>FrJiagongguanli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\FrJiagongliaodan.resx">
+      <DependentUpon>FrJiagongliaodan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\Frjishugenggai.resx">
+      <DependentUpon>Frjishugenggai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\Frjixiujianxinjian.resx">
+      <DependentUpon>Frjixiujianxinjian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\FrJixiuyewu.resx">
+      <DependentUpon>FrJixiuyewu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\Frmohusousuo.resx">
+      <DependentUpon>Frmohusousuo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\Frpaichanjihua.resx">
+      <DependentUpon>Frpaichanjihua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\FrShengchanbujianyan.resx">
+      <DependentUpon>FrShengchanbujianyan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\FrShengchanbuliaodan.resx">
+      <DependentUpon>FrShengchanbuliaodan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\FrShengchanbuzongliaodan.resx">
+      <DependentUpon>FrShengchanbuzongliaodan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\FrShengchanguanli.resx">
+      <DependentUpon>FrShengchanguanli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\FrShengchanjianyanfankui.resx">
+      <DependentUpon>FrShengchanjianyanfankui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\Frshengqingdan.resx">
+      <DependentUpon>Frshengqingdan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\Frwujinfucai.resx">
+      <DependentUpon>Frwujinfucai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\FrZhuangpeifankui.resx">
+      <DependentUpon>FrZhuangpeifankui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\FrZhuangpeiguanli.resx">
+      <DependentUpon>FrZhuangpeiguanli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="生产部\FrZhuangpeiqingkuang.resx">
+      <DependentUpon>FrZhuangpeiqingkuang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务部\Frgongyika.resx">
+      <DependentUpon>Frgongyika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务部\Frmujvbu.resx">
+      <DependentUpon>Frmujvbu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务部\Frrukuchaxun.resx">
+      <DependentUpon>Frrukuchaxun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运营管理\FrBumenbianji.resx">
+      <DependentUpon>FrBumenbianji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运营管理\FrBumenguanli.resx">
+      <DependentUpon>FrBumenguanli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运营管理\FrYonghubianji.resx">
+      <DependentUpon>FrYonghubianji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运营管理\FrYonghuguanli.resx">
+      <DependentUpon>FrYonghuguanli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运营管理\FrZhiweibianji.resx">
+      <DependentUpon>FrZhiweibianji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="运营管理\FrZhiweiguanli.resx">
+      <DependentUpon>FrZhiweiguanli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\FrCaigouxiangqing.resx">
+      <DependentUpon>FrCaigouxiangqing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\FrFankuixiangxi.resx">
+      <DependentUpon>FrFankuixiangxi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\Frgongyishunxuliaodan.resx">
+      <DependentUpon>Frgongyishunxuliaodan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\FrJiagongxiangqing.resx">
+      <DependentUpon>FrJiagongxiangqing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\Frjinggongxiangmu1.resx">
+      <DependentUpon>Frjinggongxiangmu1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\FrJinggongxiangmu.resx">
+      <DependentUpon>FrJinggongxiangmu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\FrMujvbuxiangmu.resx">
+      <DependentUpon>FrMujvbuxiangmu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\FrTiaoshihuifu.resx">
+      <DependentUpon>FrTiaoshihuifu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\FrTiaoshixiangqing.resx">
+      <DependentUpon>FrTiaoshixiangqing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\Frwujinfucaixiangmu.resx">
+      <DependentUpon>Frwujinfucaixiangmu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\FrXiangxi.resx">
+      <DependentUpon>FrXiangxi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\FrYanfaxiangqing.resx">
+      <DependentUpon>FrYanfaxiangqing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\Frzhangpei.resx">
+      <DependentUpon>Frzhangpei.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\FrZhishixianghuifu.resx">
+      <DependentUpon>FrZhishixianghuifu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\FrZhuangpeihuifu.resx">
+      <DependentUpon>FrZhuangpeihuifu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\FrZhuangpeixiangqing.resx">
+      <DependentUpon>FrZhuangpeixiangqing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\FrZonglan.resx">
+      <DependentUpon>FrZonglan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\Frzonglanzongliaodan.resx">
+      <DependentUpon>Frzonglanzongliaodan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\Frshejiweiwancheng.resx">
+      <DependentUpon>Frshejiweiwancheng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\Frjiagongweiwancheng.resx">
+      <DependentUpon>Frjiagongweiwancheng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\Frweiwanchengcaigouliaodan.resx">
+      <DependentUpon>Frweiwanchengcaigouliaodan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\Frweiwanchengjiagongliaodan.resx">
+      <DependentUpon>Frweiwanchengjiagongliaodan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目总览\Frzhuangpeiweiwancheng.resx">
+      <DependentUpon>Frzhuangpeiweiwancheng.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="db_xiangmuguanliDataSet.xsc">
+      <DependentUpon>db_xiangmuguanliDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_xiangmuguanliDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_xiangmuguanliDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_xiangmuguanliDataSet.xss">
+      <DependentUpon>db_xiangmuguanliDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bitbug_favicon %283%29.ico" />
+    <Content Include="dll\MySql.Data.dll" />
+    <None Include="Resources\opportunities_32x32.png" />
+    <None Include="Resources\checkbox2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells">
+      <HintPath>..\dll\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Words">
+      <HintPath>..\dll\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Charts">
+      <HintPath>..\dll\DevComponents.DotNetBar.Charts.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Keyboard">
+      <HintPath>..\dll\DevComponents.DotNetBar.Keyboard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Layout">
+      <HintPath>..\dll\DevComponents.DotNetBar.Layout.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Schedule">
+      <HintPath>..\dll\DevComponents.DotNetBar.Schedule.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.SuperGrid">
+      <HintPath>..\dll\DevComponents.DotNetBar.SuperGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\dll\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation">
+      <HintPath>..\dll\DevComponents.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v15.2.UI, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v15.2.Core, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.2.UI, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.UI, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.Wizard, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v15.2.Core, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\dll\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="NetWorkLib">
+      <HintPath>..\dll\NetWorkLib.dll</HintPath>
+    </Reference>
+    <Reference Include="SmileWei.EmbeddedApp">
+      <HintPath>..\dll\SmileWei.EmbeddedApp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http">
+      <HintPath>..\dll\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.QRCode">
+      <HintPath>..\dll\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\jiagou\WindowsFormsApplication2\jiagou.csproj">
+      <Project>{2a3011eb-37a0-4291-a6e5-fa534c9ebde4}</Project>
+      <Name>jiagou</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\shichangbu\market\market.csproj">
+      <Project>{b736dd97-d393-4f59-b2c6-681c177ddd6f}</Project>
+      <Name>market</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mujv\mujubu.csproj">
+      <Project>{260df3cf-06ed-4116-9fd3-0232219d665e}</Project>
+      <Name>mujubu</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
